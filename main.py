@@ -1,10 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.constants import Planck,speed_of_light,Boltzmann
+from scipy.constants import h,c,k
 
-h=Planck
-c=speed_of_light
-k=Boltzmann 
+
 def planckRadiationFormula(v,T):  
     return  ( (8.0*np.pi*h) / (c**3) ) * ( (v**3) / (np.exp( (h*v)/(k*T) ) -1.0 ) ) 
 
